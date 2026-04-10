@@ -76,7 +76,7 @@ public abstract class Publication {
     public void setComments(ArrayList<Comment> comments) {
         this.comments = comments;
     }
-    
+        public void postImage(){};
     
     
     

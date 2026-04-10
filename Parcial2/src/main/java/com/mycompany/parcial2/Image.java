@@ -4,18 +4,24 @@
  */
 package com.mycompany.parcial2;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
+
 /**
  *
  * @author Zedanc
  */
-public class Image {
+public class Image extends Publication {
     private int resolution;
     private String filePath;
 
-    public Image(int resolution, String filePath) {
+    public Image(int resolution, String filePath, int id, User author, LocalDate publicationDate, String descriptiveText, ArrayList<Reaction> reactions, ArrayList<Comment> comments) {
+        super(id, author, publicationDate, descriptiveText, reactions, comments);
         this.resolution = resolution;
         this.filePath = filePath;
     }
+
+    
 
     public int getResolution() {
         return resolution;
@@ -33,7 +39,10 @@ public class Image {
         this.filePath = filePath;
     }
     
-    
+    @Override
+        public void postImage(){
+        
+    }
     
     
 }

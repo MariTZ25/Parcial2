@@ -28,7 +28,7 @@ public class ConnectUs {
     public ArrayList<User> getUser(String name) {
         
         for(User u: users){
-            if(name==u.getUsername()){
+            if(name == u.getUsername()){
                  return users;
             }
         }
@@ -53,13 +53,8 @@ public class ConnectUs {
         
     }
     
-    public void busquedaPorIndex(int index){
-        
-        for (User u: users){
-                return u(index);
-        }
-        
-       
+    public User busquedaPorIndex(int index){
+        return users.get(index);
         
     }
     
